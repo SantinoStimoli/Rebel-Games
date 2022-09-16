@@ -4,9 +4,7 @@ createApp({
 
     data() {
 
-        return {
-            existRegister: false,
-        }
+        return {}
 
     },
     created() { },
@@ -40,13 +38,18 @@ createApp({
 
         },
 
-        functionExistRegister() {
-            console.log("existRegister")
-            this.existRegister = true
+        turnLogIn() {
+            register = document.getElementsByClassName("register")[0].classList;
+            login = document.getElementsByClassName("login")[0].classList;
+
+            if (register.contains("none")) {
+                register.remove("none")
+                login.add("none")
+            } else {
+                register.add("none")
+                login.remove("none")
+            }
         },
-        functionExistLogin() {
-            this.existRegister = false
-        }
 
 
 

@@ -998,7 +998,6 @@ footer {
     position: relative;
 }
 
-
 .div-button button::after {
     --slice-0: inset(50% 50% 50% 50%);
     --slice-1: inset(80% -6px 0 0);
@@ -1135,18 +1134,6 @@ input:hover {
     opacity: .5;
 }
 
-.register {
-    margin: 3rem auto;
-    width: 400px;
-    padding: 10px 20px;
-    background-color: var(--color-fondo-1);
-    border-radius: var(--border-radius-2);
-    -webkit-border-radius: var(--border-radius-2);
-    -moz-border-radius: var(--border-radius-2);
-    -ms-border-radius: var(--border-radius-2);
-    -o-border-radius: var(--border-radius-2);
-}
-
 .form-style {
     padding: 10px 15px;
     background-color: var(--color-fondo-2);
@@ -1167,21 +1154,60 @@ input#regName {
     width: 90%;
 }
 
+.none {
+    display: none;
+}
+
 .w-g {
     @apply flex justify-around;
     margin: 0 1rem 1.2rem;
 }
 
-.genero-fecha input[type=date] {
-    text-align: center;
-    width: 35%;
-    color: var(--color-letra-1);
-    border-bottom: 1px solid var(--color-letra-1);
-    background: transparent;
+.login-box form p {
+    font-size: .8rem;
+    margin-bottom: 1rem;
 }
 
-.genero-fecha input[type=date]:valid {
+.login-box form p b {
+    cursor: pointer;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    transition: var(--transition-200ms);
+    -webkit-transition: var(--transition-200ms);
+    -moz-transition: var(--transition-200ms);
+    -ms-transition: var(--transition-200ms);
+    -o-transition: var(--transition-200ms);
+}
+
+.login-box form p b:hover {
+    color: var(--color-detalles-1);
+}
+
+.genero-fecha input[type=date] {
+    text-align: center;
+    width: 45%;
+    color: var(--color-letra-1);
+    border-bottom: 1px solid var(--color-letra-1);
+    background: rgb(254, 89, 215);
+    background: linear-gradient(0deg, rgba(254, 89, 215, 1) 0%, rgba(182, 58, 164, 1) 5%, rgba(103, 25, 108, 1) 17%, rgba(73, 12, 87, 1) 23%, rgba(59, 6, 77, 1) 33%, rgba(59, 6, 77, 0) 100%);
+    opacity: .3;
+    transition: var(--transition-300ms);
+    -webkit-transition: var(--transition-300ms);
+    -moz-transition: var(--transition-300ms);
+    -ms-transition: var(--transition-300ms);
+    -o-transition: var(--transition-300ms);
+}
+
+.genero-fecha input[type=date]:valid,
+.genero-fecha input[type=date]:hover,
+.genero-fecha input[type=date]:focus {
     border-bottom: 1px solid var(--color-detalles-1);
+    opacity: .6;
+    transition: var(--transition-300ms);
+    -webkit-transition: var(--transition-300ms);
+    -moz-transition: var(--transition-300ms);
+    -ms-transition: var(--transition-300ms);
+    -o-transition: var(--transition-300ms);
 }
 
 .password-type-text {
@@ -1194,24 +1220,19 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .contenedor-login {
+    user-select: none;
     background-color: var(--color-fondo-1);
     width: 400px;
-    padding: 30px 30px 10px;
-    border-radius: var(--border-radius-2);
-    -webkit-border-radius: var(--border-radius-2);
-    -moz-border-radius: var(--border-radius-2);
-    -ms-border-radius: var(--border-radius-2);
-    -o-border-radius: var(--border-radius-2);
-    margin: 3rem auto;
-}
-
-.user-box input:focus~label,
-.user-box input:valid~label,
-.user-box input:hover~label {
-    top: -20px;
-    left: 0;
-    color: var(--color-detalles-1);
-    font-size: 12px;
+    padding: 60px 60px 30px;
+    margin: 3rem auto 4rem;
+    border-radius: 77% 23% 83% 17% / 16% 82% 18% 84%;
+    -webkit-border-radius: 77% 23% 83% 17% / 16% 82% 18% 84%;
+    -moz-border-radius: 77% 23% 83% 17% / 16% 82% 18% 84%;
+    -ms-border-radius: 77% 23% 83% 17% / 16% 82% 18% 84%;
+    -o-border-radius: 77% 23% 83% 17% / 16% 82% 18% 84%;
+    background: rgb(59, 6, 77);
+    background: linear-gradient(0deg, rgba(59, 6, 77, 1) 0%, rgba(92, 10, 119, 1) 100%);
+    box-shadow: var(--color-detalles-1) 0px 5px 25px 0px;
 }
 
 .login-box .user-box {
@@ -1229,13 +1250,26 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-bottom: 30px;
     border: none;
     border-bottom: 1px solid var(--color-letra-1);
-    background: transparent;
+    background: rgb(254, 89, 215);
+    background: linear-gradient(0deg, rgba(254, 89, 215, 1) 0%, rgba(182, 58, 164, 1) 5%, rgba(103, 25, 108, 1) 17%, rgba(73, 12, 87, 1) 23%, rgba(59, 6, 77, 1) 33%, rgba(59, 6, 77, 0) 100%);
+    opacity: .3;
+    transition: var(--transition-300ms);
+    -webkit-transition: var(--transition-300ms);
+    -moz-transition: var(--transition-300ms);
+    -ms-transition: var(--transition-300ms);
+    -o-transition: var(--transition-300ms);
 }
 
 .user-box input:focus,
 .user-box input:valid,
 .user-box input:hover {
     border-bottom: 1px solid var(--color-detalles-1);
+    opacity: .6;
+    transition: var(--transition-300ms);
+    -webkit-transition: var(--transition-300ms);
+    -moz-transition: var(--transition-300ms);
+    -ms-transition: var(--transition-300ms);
+    -o-transition: var(--transition-300ms);
 }
 
 .login-box .user-box label {
@@ -1257,14 +1291,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .contenedor-login h3 {
-    font-size: 1.5rem;
+    @apply uppercase;
+    font-size: 1.4rem;
     font-family: titulos;
     text-align: center;
     margin-bottom: 2rem;
 }
 
+.user-box.last input {
+    margin-bottom: 1rem;
+}
+
 /* B U T T O N   L O G   I N */
-/* From uiverse.io by @adamgiebl */
 .cssbuttons-io {
     position: relative;
     font-size: 15px;
@@ -1520,6 +1558,64 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
     .carousel {
         height: 220px;
+    }
+
+    .w-g {
+        margin: 0 .5rem .6rem;
+    }
+
+    .login-box form p {
+        font-size: .6rem;
+        margin-bottom: .5rem;
+        margin-left: .5rem;
+    }
+
+    .genero-fecha input[type=date] {
+        font-size: .75rem;
+    }
+
+    .contenedor-login {
+        width: 300px;
+        padding: 30px 30px 15px;
+        margin: 3rem auto;
+        box-shadow: var(--color-detalles-1) 0px 2px 15px 0px;
+    }
+
+    .contenedor-login form {
+        margin: .8rem 1.3rem;
+    }
+
+    .login-box .user-box input {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .login-box .user-box label {
+        padding: 0 0 5px 5px;
+        font-size: 14px;
+        transition: .5s;
+    }
+
+    .login-box .user-box input:focus~label,
+    .login-box .user-box input:valid~label {
+        top: -14px;
+        font-size: 11px;
+    }
+
+    .contenedor-login h3 {
+        @apply uppercase;
+        font-size: 1.3rem;
+        font-family: titulos;
+        text-align: center;
+        margin-bottom: .7rem;
+    }
+
+    .user-box.last input {
+        margin-bottom: .7rem;
+    }
+
+    .cssbuttons-io {
+        font-size: 12px;
     }
 
 }
