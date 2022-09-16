@@ -4,7 +4,9 @@ createApp({
 
     data() {
 
-        return {}
+        return {
+            existRegister: false,
+        }
 
     },
     created() { },
@@ -36,6 +38,14 @@ createApp({
                 dropdown.remove("active")
             }
 
+        },
+
+        functionExistRegister() {
+            console.log("existRegister")
+            this.existRegister = true
+        },
+        functionExistLogin() {
+            this.existRegister = false
         }
 
 
@@ -45,36 +55,6 @@ createApp({
 
     computed: {
 
-        // carousel() {
-        //     let image1 = document.getElementsByClassName("carousel-1")[0];
-        //     let image2 = document.getElementsByClassName("carousel-2")[0];
-        //     let image3 = document.getElementsByClassName("carousel-3")[0];
-
-
-
-        //     if (image1.hasAttribute("checked")) {
-
-        //         console.log(image1.hasAttribute("checked"));
-
-        //         image1.removeAttribute("checked")
-        //         image2.setAttribute("checked", "")
-
-        //     } else if (image2.hasAttribute("checked")) {
-
-        //         console.log(image1.hasAttribute("checked"));
-
-        //         image2.removeAttribute("checked")
-        //         image3.setAttribute("checked", "")
-
-        //     } else if (image3.hasAttribute("checked")) {
-
-        //         console.log(image1.hasAttribute("checked"));
-        //         image3.removeAttribute("checked")
-        //         image1.setAttribute("checked", "")
-
-        //     }
-
-        // },
 
     },
 

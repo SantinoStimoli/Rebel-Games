@@ -692,12 +692,6 @@ video {
   touch-action: pan-y;
 }
 
-.carousel-inner::after {
-  display: block;
-  clear: both;
-  content: "";
-}
-
 .carousel-item {
   display: none;
   margin-right: -100%;
@@ -1925,6 +1919,7 @@ video {
   /* transiciones */
   --transition-200ms: all ease .2s;
   --transition-300ms: all ease .3s;
+  --transition-400ms: all ease .4s;
   --transition-500ms: all ease .5s;
 }
 
@@ -1959,11 +1954,6 @@ svg:hover {
   -ms-transition: var(--transition-200ms);
   -o-transition: var(--transition-200ms);
   opacity: 1;
-}
-
-input {
-  color: var(--color-letra-2);
-  padding: 5px 10px;
 }
 
 /* H E A D E R */
@@ -2352,6 +2342,11 @@ h2.subtitle {
   height: 100%;
   overflow: hidden;
   margin-bottom: 30px;
+  border-radius: var(--border-radius-1);
+  -webkit-border-radius: var(--border-radius-1);
+  -moz-border-radius: var(--border-radius-1);
+  -ms-border-radius: var(--border-radius-1);
+  -o-border-radius: var(--border-radius-1);
 }
 
 .card:after {
@@ -2401,10 +2396,19 @@ h2.subtitle {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--color-detalles-2);
   opacity: 0;
   z-index: 5;
-  transition: opacity 0.6s;
+  background: var(--color-detalles-2);
+  transition: all ease 0.6s;
+  -webkit-transition: all ease 0.6s;
+  -moz-transition: all ease 0.6s;
+  -ms-transition: all ease 0.6s;
+  -o-transition: all ease 0.6s;
+}
+
+.card:hover .image-holder {
+  filter: blur(8px);
+  -webkit-filter: blur(3px);
 }
 
 .image-holder {
@@ -2975,10 +2979,10 @@ footer {
 }
 
 .div-button button:hover::after {
-  -webkit-animation: 1s glitch;
-          animation: 1s glitch;
   -webkit-animation-timing-function: steps(2, end);
           animation-timing-function: steps(2, end);
+  animation: 1s glitch;
+  -webkit-animation: 1s glitch;
 }
 
 @-webkit-keyframes glitch {
@@ -2986,66 +2990,110 @@ footer {
     -webkit-clip-path: var(--slice-1);
             clip-path: var(--slice-1);
     transform: translate(-20px, -10px);
+    -webkit-transform: translate(-20px, -10px);
+    -moz-transform: translate(-20px, -10px);
+    -ms-transform: translate(-20px, -10px);
+    -o-transform: translate(-20px, -10px);
   }
 
   10% {
     -webkit-clip-path: var(--slice-3);
             clip-path: var(--slice-3);
     transform: translate(10px, 10px);
+    -webkit-transform: translate(10px, 10px);
+    -moz-transform: translate(10px, 10px);
+    -ms-transform: translate(10px, 10px);
+    -o-transform: translate(10px, 10px);
   }
 
   20% {
     -webkit-clip-path: var(--slice-1);
             clip-path: var(--slice-1);
     transform: translate(-10px, 10px);
+    -webkit-transform: translate(-10px, 10px);
+    -moz-transform: translate(-10px, 10px);
+    -ms-transform: translate(-10px, 10px);
+    -o-transform: translate(-10px, 10px);
   }
 
   30% {
     -webkit-clip-path: var(--slice-3);
             clip-path: var(--slice-3);
     transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    -moz-transform: translate(0px, 5px);
+    -ms-transform: translate(0px, 5px);
+    -o-transform: translate(0px, 5px);
   }
 
   40% {
     -webkit-clip-path: var(--slice-2);
             clip-path: var(--slice-2);
     transform: translate(-5px, 0px);
+    -webkit-transform: translate(-5px, 0px);
+    -moz-transform: translate(-5px, 0px);
+    -ms-transform: translate(-5px, 0px);
+    -o-transform: translate(-5px, 0px);
   }
 
   50% {
     -webkit-clip-path: var(--slice-3);
             clip-path: var(--slice-3);
     transform: translate(5px, 0px);
+    -webkit-transform: translate(5px, 0px);
+    -moz-transform: translate(5px, 0px);
+    -ms-transform: translate(5px, 0px);
+    -o-transform: translate(5px, 0px);
   }
 
   60% {
     -webkit-clip-path: var(--slice-4);
             clip-path: var(--slice-4);
     transform: translate(5px, 10px);
+    -webkit-transform: translate(5px, 10px);
+    -moz-transform: translate(5px, 10px);
+    -ms-transform: translate(5px, 10px);
+    -o-transform: translate(5px, 10px);
   }
 
   70% {
     -webkit-clip-path: var(--slice-2);
             clip-path: var(--slice-2);
     transform: translate(-10px, 10px);
+    -webkit-transform: translate(-10px, 10px);
+    -moz-transform: translate(-10px, 10px);
+    -ms-transform: translate(-10px, 10px);
+    -o-transform: translate(-10px, 10px);
   }
 
   80% {
     -webkit-clip-path: var(--slice-5);
             clip-path: var(--slice-5);
     transform: translate(20px, -10px);
+    -webkit-transform: translate(20px, -10px);
+    -moz-transform: translate(20px, -10px);
+    -ms-transform: translate(20px, -10px);
+    -o-transform: translate(20px, -10px);
   }
 
   90% {
     -webkit-clip-path: var(--slice-1);
             clip-path: var(--slice-1);
     transform: translate(-10px, 0px);
+    -webkit-transform: translate(-10px, 0px);
+    -moz-transform: translate(-10px, 0px);
+    -ms-transform: translate(-10px, 0px);
+    -o-transform: translate(-10px, 0px);
   }
 
   100% {
     -webkit-clip-path: var(--slice-1);
             clip-path: var(--slice-1);
     transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
   }
 }
 
@@ -3054,67 +3102,312 @@ footer {
     -webkit-clip-path: var(--slice-1);
             clip-path: var(--slice-1);
     transform: translate(-20px, -10px);
+    -webkit-transform: translate(-20px, -10px);
+    -moz-transform: translate(-20px, -10px);
+    -ms-transform: translate(-20px, -10px);
+    -o-transform: translate(-20px, -10px);
   }
 
   10% {
     -webkit-clip-path: var(--slice-3);
             clip-path: var(--slice-3);
     transform: translate(10px, 10px);
+    -webkit-transform: translate(10px, 10px);
+    -moz-transform: translate(10px, 10px);
+    -ms-transform: translate(10px, 10px);
+    -o-transform: translate(10px, 10px);
   }
 
   20% {
     -webkit-clip-path: var(--slice-1);
             clip-path: var(--slice-1);
     transform: translate(-10px, 10px);
+    -webkit-transform: translate(-10px, 10px);
+    -moz-transform: translate(-10px, 10px);
+    -ms-transform: translate(-10px, 10px);
+    -o-transform: translate(-10px, 10px);
   }
 
   30% {
     -webkit-clip-path: var(--slice-3);
             clip-path: var(--slice-3);
     transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    -moz-transform: translate(0px, 5px);
+    -ms-transform: translate(0px, 5px);
+    -o-transform: translate(0px, 5px);
   }
 
   40% {
     -webkit-clip-path: var(--slice-2);
             clip-path: var(--slice-2);
     transform: translate(-5px, 0px);
+    -webkit-transform: translate(-5px, 0px);
+    -moz-transform: translate(-5px, 0px);
+    -ms-transform: translate(-5px, 0px);
+    -o-transform: translate(-5px, 0px);
   }
 
   50% {
     -webkit-clip-path: var(--slice-3);
             clip-path: var(--slice-3);
     transform: translate(5px, 0px);
+    -webkit-transform: translate(5px, 0px);
+    -moz-transform: translate(5px, 0px);
+    -ms-transform: translate(5px, 0px);
+    -o-transform: translate(5px, 0px);
   }
 
   60% {
     -webkit-clip-path: var(--slice-4);
             clip-path: var(--slice-4);
     transform: translate(5px, 10px);
+    -webkit-transform: translate(5px, 10px);
+    -moz-transform: translate(5px, 10px);
+    -ms-transform: translate(5px, 10px);
+    -o-transform: translate(5px, 10px);
   }
 
   70% {
     -webkit-clip-path: var(--slice-2);
             clip-path: var(--slice-2);
     transform: translate(-10px, 10px);
+    -webkit-transform: translate(-10px, 10px);
+    -moz-transform: translate(-10px, 10px);
+    -ms-transform: translate(-10px, 10px);
+    -o-transform: translate(-10px, 10px);
   }
 
   80% {
     -webkit-clip-path: var(--slice-5);
             clip-path: var(--slice-5);
     transform: translate(20px, -10px);
+    -webkit-transform: translate(20px, -10px);
+    -moz-transform: translate(20px, -10px);
+    -ms-transform: translate(20px, -10px);
+    -o-transform: translate(20px, -10px);
   }
 
   90% {
     -webkit-clip-path: var(--slice-1);
             clip-path: var(--slice-1);
     transform: translate(-10px, 0px);
+    -webkit-transform: translate(-10px, 0px);
+    -moz-transform: translate(-10px, 0px);
+    -ms-transform: translate(-10px, 0px);
+    -o-transform: translate(-10px, 0px);
   }
 
   100% {
     -webkit-clip-path: var(--slice-1);
             clip-path: var(--slice-1);
     transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
   }
+}
+
+/* L O G   I N */
+
+input::-moz-placeholder {
+  color: var(--color-letra-1);
+}
+
+input::placeholder {
+  color: var(--color-letra-1);
+}
+
+input:hover,
+input:hover {
+  opacity: .5;
+}
+
+.register {
+  margin: 3rem auto;
+  width: 400px;
+  padding: 10px 20px;
+  background-color: var(--color-fondo-1);
+  border-radius: var(--border-radius-2);
+  -webkit-border-radius: var(--border-radius-2);
+  -moz-border-radius: var(--border-radius-2);
+  -ms-border-radius: var(--border-radius-2);
+  -o-border-radius: var(--border-radius-2);
+}
+
+.form-style {
+  padding: 10px 15px;
+  background-color: var(--color-fondo-2);
+}
+
+.nombre-apellido {
+  display: flex;
+  width: 100%;
+}
+
+input#regLastName {
+  margin-left: 1rem;
+  width: 90%;
+}
+
+input#regName {
+  margin-right: 1rem;
+  width: 90%;
+}
+
+.w-g {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 1rem 1.2rem;
+}
+
+.genero-fecha input[type=date] {
+  text-align: center;
+  width: 35%;
+  color: var(--color-letra-1);
+  border-bottom: 1px solid var(--color-letra-1);
+  background: transparent;
+}
+
+.genero-fecha input[type=date]:valid {
+  border-bottom: 1px solid var(--color-detalles-1);
+}
+
+.password-type-text {
+  color: var(--detalles-color-1);
+  text-shadow: 0px 0px 10px var(--detalles-color-1);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.contenedor-login {
+  background-color: var(--color-fondo-1);
+  width: 400px;
+  padding: 30px 30px 10px;
+  border-radius: var(--border-radius-2);
+  -webkit-border-radius: var(--border-radius-2);
+  -moz-border-radius: var(--border-radius-2);
+  -ms-border-radius: var(--border-radius-2);
+  -o-border-radius: var(--border-radius-2);
+  margin: 3rem auto;
+}
+
+.user-box input:focus~label,
+.user-box input:valid~label,
+.user-box input:hover~label {
+  top: -20px;
+  left: 0;
+  color: var(--color-detalles-1);
+  font-size: 12px;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.contenedor-login form {
+  margin: 2rem 0;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 0 0 2px 5px;
+  font-size: 15px;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid var(--color-letra-1);
+  background: transparent;
+}
+
+.user-box input:focus,
+.user-box input:valid,
+.user-box input:hover {
+  border-bottom: 1px solid var(--color-detalles-1);
+}
+
+.login-box .user-box label {
+  position: absolute;
+  padding: 0 0 5px 5px;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+  top: -20px;
+  left: 0;
+  color: var(--color-detalles-1);
+  font-size: 12px;
+}
+
+.contenedor-login h3 {
+  font-size: 1.5rem;
+  font-family: titulos;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* B U T T O N   L O G   I N */
+
+/* From uiverse.io by @adamgiebl */
+
+.cssbuttons-io {
+  position: relative;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  border: none;
+  background: linear-gradient(to right, var(--color-fondo-3), var(--color-detalles-2));
+  overflow: hidden;
+  border-radius: var(--border-radius-2);
+  -webkit-border-radius: var(--border-radius-2);
+  -moz-border-radius: var(--border-radius-2);
+  -ms-border-radius: var(--border-radius-2);
+  -o-border-radius: var(--border-radius-2);
+}
+
+.cssbuttons-io span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 10px;
+}
+
+.cssbuttons-io::before,
+.cssbuttons-io::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.cssbuttons-io::before {
+  content: "";
+  background: black;
+  width: 120%;
+  left: -10%;
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+  transform: skew(27deg);
+  -moz-transform: skew(27deg);
+  -ms-transform: skew(27deg);
+  -o-transform: skew(27deg);
+}
+
+.cssbuttons-io:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.cssbuttons-io:active {
+  transform: scale(0.95);
 }
 
 /* Q U E R Y S */
@@ -3259,6 +3552,14 @@ footer {
     width: auto;
     height: 4.7rem;
     padding: 1rem 0;
+  }
+
+  .user-dropdown {
+    top: -4px;
+  }
+
+  .user-dropdown.active {
+    top: 97px;
   }
 }
 
