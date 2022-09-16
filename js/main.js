@@ -27,6 +27,17 @@ createApp({
             }
         },
 
+        moveUser() {
+            let dropdown = document.getElementsByClassName("user-dropdown")[0].classList;
+
+            if (dropdown.length == 1) {
+                dropdown.add("active")
+            } else {
+                dropdown.remove("active")
+            }
+
+        }
+
 
 
 

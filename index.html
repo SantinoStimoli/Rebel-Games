@@ -67,83 +67,72 @@
                         <path d="M6 5l14 1l-1 7h-13" />
                     </svg>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="44"
-                        height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7" fill="none"
-                        stroke-linecap="round" stroke-linejoin="round">
+                    <div class="no-register">
+                        <a href="">Log In | Register</a>
+
+                    </div>
+
+                    <!-- <svg @click="moveUser" xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-user-circle" width="44" height="44" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="#FE59D7" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <circle cx="12" cy="12" r="9" />
                         <circle cx="12" cy="10" r="3" />
                         <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
-                    </svg>
-
-                    <!-- No registrado -->
-                    <!-- <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-off" width="44"
-                        height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7" fill="none"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M14.274 10.291a4 4 0 1 0 -5.554 -5.58m-.548 3.453a4.01 4.01 0 0 0 2.62 2.65" />
-                        <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 1.147 .167m2.685 2.681a4 4 0 0 1 .168 1.152v2" />
-                        <line x1="3" y1="3" x2="21" y2="21" />
                     </svg> -->
 
                 </div>
 
-                <!-- <div class="user-dropdown">
+                <div class="user-dropdown">
 
-                    <div class="user-out">
+                    <div class="user-in">
 
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            class="icon icon-tabler icon-tabler-corner-left-up-double" width="44" height="44"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7" fill="none" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M18 19h-6a3 3 0 0 1 -3 -3v-7" />
-                            <path d="M13 13l-4 -4l-4 4m8 -5l-4 -4l-4 4" />
-                        </svg>
-                        <div class="in-out">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-login"
+                        <div class="user-info">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle"
                                 width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7"
                                 fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path
-                                    d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
-                                <path d="M20 12h-13l3 -3m0 6l-3 -3" />
+                                <circle cx="12" cy="12" r="9" />
+                                <circle cx="12" cy="10" r="3" />
+                                <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
                             </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-plus"
+
+                            <div class="info">
+                                <span>Santino Stimoli</span>
+                                <span class="email">santinostimoli@gmail.com</span>
+                            </div>
+
+                            <span class="pocket">$ 912</span>
+
+                        </div>
+
+
+                        <div class="user-options">
+
+                            <svg @click="moveUser" xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-arrow-up-circle" width="44" height="44"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <circle cx="12" cy="12" r="9" />
+                                <line x1="12" y1="8" x2="8" y2="12" />
+                                <line x1="12" y1="8" x2="12" y2="16" />
+                                <line x1="16" y1="12" x2="12" y2="8" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-x"
                                 width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7"
                                 fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                 <circle cx="9" cy="7" r="4" />
                                 <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-                                <path d="M16 11h6m-3 -3v6" />
+                                <path d="M17 9l4 4m0 -4l-4 4" />
                             </svg>
+
                         </div>
 
                     </div>
 
-
-                    <div class="user-in">
-
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-corner-left-up-double" width="44"
-                            height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7" fill="none" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M18 19h-6a3 3 0 0 1 -3 -3v-7" />
-                            <path d="M13 13l-4 -4l-4 4m8 -5l-4 -4l-4 4" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-x" width="44"
-                            height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <circle cx="9" cy="7" r="4" />
-                            <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-                            <path d="M17 9l4 4m0 -4l-4 4" />
-                        </svg>
-
-                    </div>
-
-
-                </div> -->
+                </div>
 
             </nav>
 
@@ -185,6 +174,21 @@
 
         <!-- C A R O U S E L -->
         <section class="carousel" aria-label="Gallery">
+            <ol class="carousel__viewport">
+                <li id="carousel__slide1" class="carousel__slide">
+                    <div class="carousel__snapper"></div>
+                </li>
+                <li id="carousel__slide2" class="carousel__slide">
+                    <div class="carousel__snapper"></div>
+                </li>
+                <li id="carousel__slide3" class="carousel__slide">
+                    <div class="carousel__snapper"></div>
+                </li>
+            </ol>
+        </section>
+
+
+        <!-- <section class="carousel" aria-label="Gallery">
 
             <div class="carousel">
                 <div class="carousel-inner">
@@ -208,7 +212,7 @@
                 </div>
             </div>
 
-        </section>
+        </section> -->
 
         <!-- S E C T I O N   C A R D S   1 -->
         <section class="section-games">
