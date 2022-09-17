@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- pestaña -->
+    <title>Rebel - ...</title>
+    <link rel="icon" href="./resources/logo/REBEL.png">
+
+    <!-- fuentes / heroicons.com (SVG) / tablericons.com (SVG) -->
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/tailwind.css">
+
+</head>
+
+<body>
+
+    <!-- P A G I N A -->
+    <div id="app">
+
+        <!-- E N C A B E Z A D O -->
+        <header>
+            <!-- N A V   B U S C A D O R -->
+            <nav class="nav-search">
+
+                <a href="index.html" class="logo-name">
+
+                    <img class="logo-and-name" src="./resources/logo/REBEL-horizontal.png" alt="rebel-logo">
+                    <img class="logo-responsive " src="./resources/logo/REBEL.png" alt="rebel-logo">
+
+                </a>
+
+                <div class="div-search">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search search-nav"
+                        width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <circle cx="10" cy="10" r="7" />
+                        <line x1="21" y1="21" x2="15" y2="15" />
+                    </svg>
+                    <input type="text" id="search-nav">
+
+                </div>
+
+                <div class="user-section">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="44"
+                        height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart"
+                        width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <circle cx="6" cy="19" r="2" />
+                        <circle cx="17" cy="19" r="2" />
+                        <path d="M17 17h-11v-14h-2" />
+                        <path d="M6 5l14 1l-1 7h-13" />
+                    </svg>
+
+                    <!-- <div class="no-register">
+                        <a href="">Log In | Register</a>
+                    </div> -->
+
+                    <svg @click="moveUser" xmlns="http://www.w3.org/2000/svg"
+                        class="icon icon-tabler icon-tabler-user-circle" width="44" height="44" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="#FE59D7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <circle cx="12" cy="12" r="9" />
+                        <circle cx="12" cy="10" r="3" />
+                        <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
+                    </svg>
+
+                </div>
+
+                <div class="user-dropdown">
+
+                    <div class="user-in">
+
+                        <div class="user-info">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle"
+                                width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <circle cx="12" cy="12" r="9" />
+                                <circle cx="12" cy="10" r="3" />
+                                <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
+                            </svg>
+
+                            <div class="info">
+                                <span>Santino Stimoli</span>
+                                <span class="email">santinostimoli@gmail.com</span>
+                            </div>
+
+                            <span class="pocket">$ 912</span>
+
+                        </div>
+
+
+                        <div class="user-options">
+
+                            <svg @click="moveUser" xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-arrow-up-circle" width="44" height="44"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <circle cx="12" cy="12" r="9" />
+                                <line x1="12" y1="8" x2="8" y2="12" />
+                                <line x1="12" y1="8" x2="12" y2="16" />
+                                <line x1="16" y1="12" x2="12" y2="8" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-x"
+                                width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                                <path d="M17 9l4 4m0 -4l-4 4" />
+                            </svg>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+            <!-- N A V   C A T E G O R I A S -->
+            <nav class="nav-categories">
+
+                <a href="">Shop</a>
+                <a href="">Games</a>
+                <a href="">DLCs</a>
+                <a href="">Gift cards</a>
+                <a href="">Offers</a>
+
+            </nav>
+
+            <!-- N A V   S I D E B A R -->
+            <nav class="sidebar-categories">
+
+                <span>Categories</span>
+
+                <a href="">Shop</a>
+                <a href="">Games</a>
+                <a href="">DLCs</a>
+                <a href="">Gift cards</a>
+                <a href="">Offers</a>
+
+                <div @click="moveSidebar" class="span-categories">
+                    <span class="span-categories">Categories</span>
+                    <div id="button-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+
+            </nav>
+
+        </header>
+
+
+
+        <!-- F O O T E R -->
+        <footer class="body-font">
+            <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+                <a class="flex title-font font-medium items-center md:justify-start justify-center ">
+                    <img class="logo" src="./resources/logo/REBEL.png" alt="">
+                    <span class="ml-3 text-xl">REBEL GAMES</span>
+                </a>
+                <p class="text-sm sm:ml-4 sm:pl-4 sm:border-l-2  sm:py-2 sm:mt-0 mt-4">©
+                    2022
+                    REBEL —
+                    <a href="https://twitter.com/knyttneve" class=" ml-1" rel="noopener noreferrer"
+                        target="_blank">@rebel.com</a>
+                </p>
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                    <a>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook"
+                            width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                        </svg>
+                    </a>
+                    <a class="ml-3 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram"
+                            width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <rect x="4" y="4" width="16" height="16" rx="4" />
+                            <circle cx="12" cy="12" r="3" />
+                            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                        </svg>
+                    </a>
+                    <a class="ml-3 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin"
+                            width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <rect x="4" y="4" width="16" height="16" rx="2" />
+                            <line x1="8" y1="11" x2="8" y2="16" />
+                            <line x1="8" y1="8" x2="8" y2="8.01" />
+                            <line x1="12" y1="16" x2="12" y2="11" />
+                            <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                        </svg>
+                    </a>
+                    <a class="ml-3 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="44"
+                            height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                        </svg>
+                    </a>
+                </span>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <!-- S C R I P T S -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <!-- cdn -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script> <!-- axios -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- michalsnik.github.io/aos/ -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- sweetalert2.github.io -->
+    <script src="https://unpkg.com/vue@3"></script> <!-- vue -->
+    <script src="./js/main.js"></script> <!-- js -->
+
+</body>
+
+</html>
