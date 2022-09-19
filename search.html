@@ -26,9 +26,9 @@
         <!-- E N C A B E Z A D O -->
         <header>
             <!-- N A V   B U S C A D O R -->
-            <nav class="nav-search">
+            <nav class="nav-search contenedor">
 
-                <a href="index.html" class="logo-name">
+                <a href="#" class="logo-name">
 
                     <img class="logo-and-name" src="./resources/logo/REBEL-horizontal.png" alt="rebel-logo">
                     <img class="logo-responsive " src="./resources/logo/REBEL.png" alt="rebel-logo">
@@ -37,35 +37,37 @@
 
                 <div class="user-section">
 
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="44"
-                        height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7" fill="none"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
-                    </svg>
+                    <!-- R E G I S T R A D O -->
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="44"
+                                height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                            </svg>
+        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart"
+                                width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <circle cx="6" cy="19" r="2" />
+                                <circle cx="17" cy="19" r="2" />
+                                <path d="M17 17h-11v-14h-2" />
+                                <path d="M6 5l14 1l-1 7h-13" />
+                            </svg>
+                            
+                            <svg @click="moveUser" xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-user-circle" width="44" height="44" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="#FE59D7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <circle cx="12" cy="12" r="9" />
+                                <circle cx="12" cy="10" r="3" />
+                                <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
+                            </svg> -->
 
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart"
-                        width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7" fill="none"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <circle cx="6" cy="19" r="2" />
-                        <circle cx="17" cy="19" r="2" />
-                        <path d="M17 17h-11v-14h-2" />
-                        <path d="M6 5l14 1l-1 7h-13" />
-                    </svg>
-
-                    <!-- <div class="no-register">
-                        <a href="">Log In | Register</a>
-                    </div> -->
-
-                    <svg @click="moveUser" xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-user-circle" width="44" height="44" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="#FE59D7" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <circle cx="12" cy="12" r="9" />
-                        <circle cx="12" cy="10" r="3" />
-                        <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
-                    </svg>
+                    <!-- N O   R E G I S T R A D O -->
+                    <div class="no-register">
+                        <a href="sesion.html">Log In | Register</a>
+                    </div>
 
                 </div>
 
@@ -123,7 +125,7 @@
             </nav>
 
             <!-- N A V   C A T E G O R I A S -->
-            <nav class="nav-categories">
+            <nav class="nav-categories contenedor">
 
                 <a href="">Shop</a>
                 <a href="">Games</a>
@@ -139,10 +141,9 @@
                 <span>Categories</span>
 
                 <a href="">Shop</a>
-                <a href="">Games</a>
-                <a href="">DLCs</a>
-                <a href="">Gift cards</a>
-                <a href="">Offers</a>
+                <a href="">About Us</a>
+                <a href="">Contact Us</a>
+                <a href="">Codes</a>
 
                 <div @click="moveSidebar" class="span-categories">
                     <span class="span-categories">Categories</span>
@@ -159,11 +160,9 @@
         </header>
 
         <!-- S E A R C H -->
-        <section class="section-search">
+        <section class="section-search contenedor">
             <aside>
-                <div class="user-box aside">
-                    <input type="text" name="" required placeholder="Search">
-                </div>
+                <input type="text" name="" required placeholder="Search">
                 <select name="types" id="select">
                     <optgroup label="Alphabetical">
                         <option value="a">A - Z</option>
@@ -175,62 +174,811 @@
                     </optgroup>
                 </select>
                 <div class="checkboxs">
-                    <div>
-                        <div class="cntr">
-                            <input type="checkbox" id="cbx1" class="hidden-xs-up cbx">
-                            <label for="cbx1" class="cbx"></label>
-                            <label for="cbx1">Action</label>
-                        </div>
-                        <div class="cntr">
-                            <input type="checkbox" id="cbx2" class="hidden-xs-up cbx">
-                            <label for="cbx2" class="cbx"></label>
-                            <label for="cbx2">Adventure</label>
-                        </div>
-                        <div class="cntr">
-                            <input type="checkbox" id="cbx3" class="hidden-xs-up cbx">
-                            <label for="cbx3" class="cbx"></label>
-                            <label for="cbx3">Sports</label>
-                        </div>
-                        <div class="cntr">
-                            <input type="checkbox" id="cbx4" class="hidden-xs-up cbx">
-                            <label for="cbx4" class="cbx"></label>
-                            <label for="cbx4">Strategy</label>
-                        </div>
-                        <div class="cntr">
-                            <input type="checkbox" id="cbx5" class="hidden-xs-up cbx">
-                            <label for="cbx5" class="cbx"></label>
-                            <label for="cbx5">Simulation</label>
-                        </div>
+                    <h4>Categories</h4>
+                    <div class="cntr">
+                        <input type="checkbox" id="cbx1" class="hidden-xs-up cbx">
+                        <label for="cbx1" class="cbx"></label>
+                        <label for="cbx1">Action</label>
                     </div>
-                    <div>
-                        <div class="cntr">
-                            <input type="checkbox" id="cbx6" class="hidden-xs-up cbx">
-                            <label for="cbx6" class="cbx"></label>
-                            <label for="cbx6">Music</label>
-                        </div>
-                        <div class="cntr">
-                            <input type="checkbox" id="cbx7" class="hidden-xs-up cbx">
-                            <label for="cbx7" class="cbx"></label>
-                            <label for="cbx7">Clasics</label>
-                        </div>
-                        <div class="cntr">
-                            <input type="checkbox" id="cbx8" class="hidden-xs-up cbx">
-                            <label for="cbx8" class="cbx"></label>
-                            <label for="cbx8">Multi Player</label>
-                        </div>
-                        <div class="cntr">
-                            <input type="checkbox" id="cbx9" class="hidden-xs-up cbx">
-                            <label for="cbx9" class="cbx"></label>
-                            <label for="cbx9">Supervivence</label>
-                        </div>
-                        <div class="cntr">
-                            <input type="checkbox" id="cbx10" class="hidden-xs-up cbx">
-                            <label for="cbx10" class="cbx"></label>
-                            <label for="cbx10">Arcade</label>
-                        </div>
+                    <div class="cntr">
+                        <input type="checkbox" id="cbx2" class="hidden-xs-up cbx">
+                        <label for="cbx2" class="cbx"></label>
+                        <label for="cbx2">Adventure</label>
+                    </div>
+                    <div class="cntr">
+                        <input type="checkbox" id="cbx3" class="hidden-xs-up cbx">
+                        <label for="cbx3" class="cbx"></label>
+                        <label for="cbx3">Sports</label>
+                    </div>
+                    <div class="cntr">
+                        <input type="checkbox" id="cbx4" class="hidden-xs-up cbx">
+                        <label for="cbx4" class="cbx"></label>
+                        <label for="cbx4">Strategy</label>
+                    </div>
+                    <div class="cntr">
+                        <input type="checkbox" id="cbx5" class="hidden-xs-up cbx">
+                        <label for="cbx5" class="cbx"></label>
+                        <label for="cbx5">Simulation</label>
+                    </div>
+                    <div class="cntr">
+                        <input type="checkbox" id="cbx6" class="hidden-xs-up cbx">
+                        <label for="cbx6" class="cbx"></label>
+                        <label for="cbx6">Music</label>
+                    </div>
+                    <div class="cntr">
+                        <input type="checkbox" id="cbx7" class="hidden-xs-up cbx">
+                        <label for="cbx7" class="cbx"></label>
+                        <label for="cbx7">Clasics</label>
+                    </div>
+                    <div class="cntr">
+                        <input type="checkbox" id="cbx8" class="hidden-xs-up cbx">
+                        <label for="cbx8" class="cbx"></label>
+                        <label for="cbx8">Multi Player</label>
+                    </div>
+                    <div class="cntr">
+                        <input type="checkbox" id="cbx9" class="hidden-xs-up cbx">
+                        <label for="cbx9" class="cbx"></label>
+                        <label for="cbx9">Supervivence</label>
+                    </div>
+                    <div class="cntr">
+                        <input type="checkbox" id="cbx10" class="hidden-xs-up cbx">
+                        <label for="cbx10" class="cbx"></label>
+                        <label for="cbx10">Arcade</label>
                     </div>
                 </div>
+                <div class="checkboxs platforms">
+                    <h4>Platforms</h4>
+                    <div class="cntr">
+                        <input type="checkbox" id="cbxP1" class="hidden-xs-up cbx">
+                        <label for="cbxP1" class="cbx"></label>
+                        <label for="cbxP1">Action</label>
+                    </div>
+                    <div class="cntr">
+                        <input type="checkbox" id="cbxP2" class="hidden-xs-up cbx">
+                        <label for="cbxP2" class="cbx"></label>
+                        <label for="cbxP2">Adventure</label>
+                    </div>
+                    <div class="cntr">
+                        <input type="checkbox" id="cbxP3" class="hidden-xs-up cbx">
+                        <label for="cbxP3" class="cbx"></label>
+                        <label for="cbxP3">Sports</label>
+                    </div>
             </aside>
+
+            <section class="section-search-2">
+                <input type="text" name="" required placeholder="Search">
+                <select name="types" id="select">
+                    <optgroup label="Alphabetical">
+                        <option value="a">A - Z</option>
+                        <option value="z">Z - A</option>
+                    </optgroup>
+                    <optgroup label="Price">
+                        <option value="mas">Max price</option>
+                        <option value="menos">Min price</option>
+                    </optgroup>
+                </select>
+                <select name="types" id="select">
+                    <optgroup label="Alphabetical">
+                        <option value="a">A - Z</option>
+                        <option value="z">Z - A</option>
+                    </optgroup>
+                    <optgroup label="Price">
+                        <option value="mas">Max price</option>
+                        <option value="menos">Min price</option>
+                    </optgroup>
+                </select>
+
+                <div class="platforms-cbx">
+                    <div class="cntr">
+                        <input type="checkbox" id="c1" class="hidden-xs-up cbx">
+                        <label for="c1" class="cbx"></label>
+                        <label for="c1">PS</label>
+                    </div>
+                    <div class="cntr">
+                        <input type="checkbox" id="c2" class="hidden-xs-up cbx">
+                        <label for="c2" class="cbx"></label>
+                        <label for="c2">PC</label>
+                    </div>
+                    <div class="cntr">
+                        <input type="checkbox" id="c3" class="hidden-xs-up cbx">
+                        <label for="c3" class="cbx"></label>
+                        <label for="c3">XBOX</label>
+                    </div>
+                </div>
+            </section>
+
+            <div class="searched">
+
+                <div class="div-cards">
+
+                    <div class="div-card2">
+                        <div class="div-card">
+                            <article class="card">
+
+                                <div class="image-holder">
+
+                                    <div class="image-holder"
+                                        style="background-image: url('https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2022/01/call-of-duty.jpeg?fit=1920%2C1080&quality=50&strip=all&ssl=1')">
+                                    </div>
+
+                                </div>
+
+                                <div class="product-description">
+
+                                    <!-- title -->
+                                    <h1 class="title">
+                                        Call of duty modern warfare II
+                                    </h1>
+
+                                    <!-- category and price -->
+                                    <div class="row category-price">
+
+                                        <div class="col-xs-12 col-sm-8 category">
+                                            <div class="categpries">Acción</div>
+                                        </div>
+
+                                        <!-- <div class="col-xs-12 col-sm-4 prices original">
+                                                    
+                                                                            <span class="price">$ 3.200,0</span>
+                                                    
+                                                                        </div> -->
+
+                                        <!-- Precio con descuento -->
+                                        <div class="col-xs-12 col-sm-4 prices offer">
+
+                                            <span class="price">$ 3.200,0</span>
+                                            <span class="discounted">$ 3.000,0</span>
+
+                                        </div>
+
+                                    </div>
+
+                                    <hr />
+
+                                    <!-- descripcion -->
+                                    <div class="description">
+
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-shopping-cart-plus" width="44"
+                                            height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7"
+                                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <circle cx="6" cy="19" r="2" />
+                                            <circle cx="17" cy="19" r="2" />
+                                            <path d="M17 17h-11v-14h-2" />
+                                            <path d="M6 5l6.005 .429m7.138 6.573l-.143 .998h-13" />
+                                            <path d="M15 6h6m-3 -3v6" />
+                                        </svg>
+                                        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart-x"
+                                                                            width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7"
+                                                                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                                            <circle cx="6" cy="19" r="2" />
+                                                                            <circle cx="17" cy="19" r="2" />
+                                                                            <path d="M17 17h-11v-14h-2" />
+                                                                            <path d="M6 5l7.999 .571m5.43 4.43l-.429 2.999h-13" />
+                                                                            <path d="M17 3l4 4" />
+                                                                            <path d="M21 3l-4 4" />
+                                                                        </svg> -->
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-heart" width="44" height="44"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <path
+                                                d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                                        </svg>
+
+                                    </div>
+
+                                </div>
+
+                            </article>
+                        </div>
+
+                        <div class="div-card">
+                            <article class="card">
+
+                                <div class="image-holder">
+
+                                    <div class="image-holder"
+                                        style="background-image: url('https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2022/01/call-of-duty.jpeg?fit=1920%2C1080&quality=50&strip=all&ssl=1')">
+                                    </div>
+
+                                </div>
+
+                                <div class="product-description">
+
+                                    <!-- title -->
+                                    <h1 class="title">
+                                        Call of duty modern warfare II
+                                    </h1>
+
+                                    <!-- category and price -->
+                                    <div class="row category-price">
+
+                                        <div class="col-xs-12 col-sm-8 category">
+                                            <div class="categpries">Acción</div>
+                                        </div>
+
+                                        <!-- <div class="col-xs-12 col-sm-4 prices original">
+                                                                
+                                                                                                <span class="price">$ 3.200,0</span>
+                                                                
+                                                                                            </div> -->
+
+                                        <!-- Precio con descuento -->
+                                        <div class="col-xs-12 col-sm-4 prices offer">
+
+                                            <span class="price">$ 3.200,0</span>
+                                            <span class="discounted">$ 3.000,0</span>
+
+                                        </div>
+
+                                    </div>
+
+                                    <hr />
+
+                                    <!-- descripcion -->
+                                    <div class="description">
+
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-shopping-cart-plus" width="44"
+                                            height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7"
+                                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <circle cx="6" cy="19" r="2" />
+                                            <circle cx="17" cy="19" r="2" />
+                                            <path d="M17 17h-11v-14h-2" />
+                                            <path d="M6 5l6.005 .429m7.138 6.573l-.143 .998h-13" />
+                                            <path d="M15 6h6m-3 -3v6" />
+                                        </svg>
+                                        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart-x"
+                                                                                                width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7"
+                                                                                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                                                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                                                                <circle cx="6" cy="19" r="2" />
+                                                                                                <circle cx="17" cy="19" r="2" />
+                                                                                                <path d="M17 17h-11v-14h-2" />
+                                                                                                <path d="M6 5l7.999 .571m5.43 4.43l-.429 2.999h-13" />
+                                                                                                <path d="M17 3l4 4" />
+                                                                                                <path d="M21 3l-4 4" />
+                                                                                            </svg> -->
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-heart" width="44" height="44"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <path
+                                                d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                                        </svg>
+
+                                    </div>
+
+                                </div>
+
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="div-card2">
+                        <div class="div-card">
+                            <article class="card">
+
+                                <div class="image-holder">
+
+                                    <div class="image-holder"
+                                        style="background-image: url('https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2022/01/call-of-duty.jpeg?fit=1920%2C1080&quality=50&strip=all&ssl=1')">
+                                    </div>
+
+                                </div>
+
+                                <div class="product-description">
+
+                                    <!-- title -->
+                                    <h1 class="title">
+                                        Call of duty modern warfare II
+                                    </h1>
+
+                                    <!-- category and price -->
+                                    <div class="row category-price">
+
+                                        <div class="col-xs-12 col-sm-8 category">
+                                            <div class="categpries">Acción</div>
+                                        </div>
+
+                                        <!-- <div class="col-xs-12 col-sm-4 prices original">
+                                                                
+                                                                                                <span class="price">$ 3.200,0</span>
+                                                                
+                                                                                            </div> -->
+
+                                        <!-- Precio con descuento -->
+                                        <div class="col-xs-12 col-sm-4 prices offer">
+
+                                            <span class="price">$ 3.200,0</span>
+                                            <span class="discounted">$ 3.000,0</span>
+
+                                        </div>
+
+                                    </div>
+
+                                    <hr />
+
+                                    <!-- descripcion -->
+                                    <div class="description">
+
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-shopping-cart-plus" width="44"
+                                            height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7"
+                                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <circle cx="6" cy="19" r="2" />
+                                            <circle cx="17" cy="19" r="2" />
+                                            <path d="M17 17h-11v-14h-2" />
+                                            <path d="M6 5l6.005 .429m7.138 6.573l-.143 .998h-13" />
+                                            <path d="M15 6h6m-3 -3v6" />
+                                        </svg>
+                                        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart-x"
+                                                                                                width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7"
+                                                                                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                                                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                                                                <circle cx="6" cy="19" r="2" />
+                                                                                                <circle cx="17" cy="19" r="2" />
+                                                                                                <path d="M17 17h-11v-14h-2" />
+                                                                                                <path d="M6 5l7.999 .571m5.43 4.43l-.429 2.999h-13" />
+                                                                                                <path d="M17 3l4 4" />
+                                                                                                <path d="M21 3l-4 4" />
+                                                                                            </svg> -->
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-heart" width="44" height="44"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <path
+                                                d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                                        </svg>
+
+                                    </div>
+
+                                </div>
+
+                            </article>
+                        </div>
+
+                        <div class="div-card">
+                            <article class="card">
+
+                                <div class="image-holder">
+
+                                    <div class="image-holder"
+                                        style="background-image: url('https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2022/01/call-of-duty.jpeg?fit=1920%2C1080&quality=50&strip=all&ssl=1')">
+                                    </div>
+
+                                </div>
+
+                                <div class="product-description">
+
+                                    <!-- title -->
+                                    <h1 class="title">
+                                        Call of duty modern warfare II
+                                    </h1>
+
+                                    <!-- category and price -->
+                                    <div class="row category-price">
+
+                                        <div class="col-xs-12 col-sm-8 category">
+                                            <div class="categpries">Acción</div>
+                                        </div>
+
+                                        <!-- <div class="col-xs-12 col-sm-4 prices original">
+                                                                
+                                                                                                <span class="price">$ 3.200,0</span>
+                                                                
+                                                                                            </div> -->
+
+                                        <!-- Precio con descuento -->
+                                        <div class="col-xs-12 col-sm-4 prices offer">
+
+                                            <span class="price">$ 3.200,0</span>
+                                            <span class="discounted">$ 3.000,0</span>
+
+                                        </div>
+
+                                    </div>
+
+                                    <hr />
+
+                                    <!-- descripcion -->
+                                    <div class="description">
+
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-shopping-cart-plus" width="44"
+                                            height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7"
+                                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <circle cx="6" cy="19" r="2" />
+                                            <circle cx="17" cy="19" r="2" />
+                                            <path d="M17 17h-11v-14h-2" />
+                                            <path d="M6 5l6.005 .429m7.138 6.573l-.143 .998h-13" />
+                                            <path d="M15 6h6m-3 -3v6" />
+                                        </svg>
+                                        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart-x"
+                                                                                                width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7"
+                                                                                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                                                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                                                                <circle cx="6" cy="19" r="2" />
+                                                                                                <circle cx="17" cy="19" r="2" />
+                                                                                                <path d="M17 17h-11v-14h-2" />
+                                                                                                <path d="M6 5l7.999 .571m5.43 4.43l-.429 2.999h-13" />
+                                                                                                <path d="M17 3l4 4" />
+                                                                                                <path d="M21 3l-4 4" />
+                                                                                            </svg> -->
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-heart" width="44" height="44"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <path
+                                                d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                                        </svg>
+
+                                    </div>
+
+                                </div>
+
+                            </article>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="div-cards">
+
+                    <div class="div-card2">
+                        <div class="div-card">
+                            <article class="card">
+
+                                <div class="image-holder">
+
+                                    <div class="image-holder"
+                                        style="background-image: url('https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2022/01/call-of-duty.jpeg?fit=1920%2C1080&quality=50&strip=all&ssl=1')">
+                                    </div>
+
+                                </div>
+
+                                <div class="product-description">
+
+                                    <!-- title -->
+                                    <h1 class="title">
+                                        Call of duty modern warfare II
+                                    </h1>
+
+                                    <!-- category and price -->
+                                    <div class="row category-price">
+
+                                        <div class="col-xs-12 col-sm-8 category">
+                                            <div class="categpries">Acción</div>
+                                        </div>
+
+                                        <!-- <div class="col-xs-12 col-sm-4 prices original">
+                                        
+                                                                <span class="price">$ 3.200,0</span>
+                                        
+                                                            </div> -->
+
+                                        <!-- Precio con descuento -->
+                                        <div class="col-xs-12 col-sm-4 prices offer">
+
+                                            <span class="price">$ 3.200,0</span>
+                                            <span class="discounted">$ 3.000,0</span>
+
+                                        </div>
+
+                                    </div>
+
+                                    <hr />
+
+                                    <!-- descripcion -->
+                                    <div class="description">
+
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-shopping-cart-plus" width="44"
+                                            height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7"
+                                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <circle cx="6" cy="19" r="2" />
+                                            <circle cx="17" cy="19" r="2" />
+                                            <path d="M17 17h-11v-14h-2" />
+                                            <path d="M6 5l6.005 .429m7.138 6.573l-.143 .998h-13" />
+                                            <path d="M15 6h6m-3 -3v6" />
+                                        </svg>
+                                        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart-x"
+                                                                width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7"
+                                                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                                <circle cx="6" cy="19" r="2" />
+                                                                <circle cx="17" cy="19" r="2" />
+                                                                <path d="M17 17h-11v-14h-2" />
+                                                                <path d="M6 5l7.999 .571m5.43 4.43l-.429 2.999h-13" />
+                                                                <path d="M17 3l4 4" />
+                                                                <path d="M21 3l-4 4" />
+                                                            </svg> -->
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-heart" width="44" height="44"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <path
+                                                d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                                        </svg>
+
+                                    </div>
+
+                                </div>
+
+                            </article>
+                        </div>
+
+                        <div class="div-card">
+                            <article class="card">
+
+                                <div class="image-holder">
+
+                                    <div class="image-holder"
+                                        style="background-image: url('https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2022/01/call-of-duty.jpeg?fit=1920%2C1080&quality=50&strip=all&ssl=1')">
+                                    </div>
+
+                                </div>
+
+                                <div class="product-description">
+
+                                    <!-- title -->
+                                    <h1 class="title">
+                                        Call of duty modern warfare II
+                                    </h1>
+
+                                    <!-- category and price -->
+                                    <div class="row category-price">
+
+                                        <div class="col-xs-12 col-sm-8 category">
+                                            <div class="categpries">Acción</div>
+                                        </div>
+
+                                        <!-- <div class="col-xs-12 col-sm-4 prices original">
+                                                    
+                                                                                    <span class="price">$ 3.200,0</span>
+                                                    
+                                                                                </div> -->
+
+                                        <!-- Precio con descuento -->
+                                        <div class="col-xs-12 col-sm-4 prices offer">
+
+                                            <span class="price">$ 3.200,0</span>
+                                            <span class="discounted">$ 3.000,0</span>
+
+                                        </div>
+
+                                    </div>
+
+                                    <hr />
+
+                                    <!-- descripcion -->
+                                    <div class="description">
+
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-shopping-cart-plus" width="44"
+                                            height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7"
+                                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <circle cx="6" cy="19" r="2" />
+                                            <circle cx="17" cy="19" r="2" />
+                                            <path d="M17 17h-11v-14h-2" />
+                                            <path d="M6 5l6.005 .429m7.138 6.573l-.143 .998h-13" />
+                                            <path d="M15 6h6m-3 -3v6" />
+                                        </svg>
+                                        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart-x"
+                                                                                    width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7"
+                                                                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                                                    <circle cx="6" cy="19" r="2" />
+                                                                                    <circle cx="17" cy="19" r="2" />
+                                                                                    <path d="M17 17h-11v-14h-2" />
+                                                                                    <path d="M6 5l7.999 .571m5.43 4.43l-.429 2.999h-13" />
+                                                                                    <path d="M17 3l4 4" />
+                                                                                    <path d="M21 3l-4 4" />
+                                                                                </svg> -->
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-heart" width="44" height="44"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <path
+                                                d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                                        </svg>
+
+                                    </div>
+
+                                </div>
+
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="div-card2">
+                        <div class="div-card">
+                            <article class="card">
+
+                                <div class="image-holder">
+
+                                    <div class="image-holder"
+                                        style="background-image: url('https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2022/01/call-of-duty.jpeg?fit=1920%2C1080&quality=50&strip=all&ssl=1')">
+                                    </div>
+
+                                </div>
+
+                                <div class="product-description">
+
+                                    <!-- title -->
+                                    <h1 class="title">
+                                        Call of duty modern warfare II
+                                    </h1>
+
+                                    <!-- category and price -->
+                                    <div class="row category-price">
+
+                                        <div class="col-xs-12 col-sm-8 category">
+                                            <div class="categpries">Acción</div>
+                                        </div>
+
+                                        <!-- <div class="col-xs-12 col-sm-4 prices original">
+                                                    
+                                                                                    <span class="price">$ 3.200,0</span>
+                                                    
+                                                                                </div> -->
+
+                                        <!-- Precio con descuento -->
+                                        <div class="col-xs-12 col-sm-4 prices offer">
+
+                                            <span class="price">$ 3.200,0</span>
+                                            <span class="discounted">$ 3.000,0</span>
+
+                                        </div>
+
+                                    </div>
+
+                                    <hr />
+
+                                    <!-- descripcion -->
+                                    <div class="description">
+
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-shopping-cart-plus" width="44"
+                                            height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7"
+                                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <circle cx="6" cy="19" r="2" />
+                                            <circle cx="17" cy="19" r="2" />
+                                            <path d="M17 17h-11v-14h-2" />
+                                            <path d="M6 5l6.005 .429m7.138 6.573l-.143 .998h-13" />
+                                            <path d="M15 6h6m-3 -3v6" />
+                                        </svg>
+                                        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart-x"
+                                                                                    width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7"
+                                                                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                                                    <circle cx="6" cy="19" r="2" />
+                                                                                    <circle cx="17" cy="19" r="2" />
+                                                                                    <path d="M17 17h-11v-14h-2" />
+                                                                                    <path d="M6 5l7.999 .571m5.43 4.43l-.429 2.999h-13" />
+                                                                                    <path d="M17 3l4 4" />
+                                                                                    <path d="M21 3l-4 4" />
+                                                                                </svg> -->
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-heart" width="44" height="44"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <path
+                                                d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                                        </svg>
+
+                                    </div>
+
+                                </div>
+
+                            </article>
+                        </div>
+
+                        <div class="div-card">
+                            <article class="card">
+
+                                <div class="image-holder">
+
+                                    <div class="image-holder"
+                                        style="background-image: url('https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2022/01/call-of-duty.jpeg?fit=1920%2C1080&quality=50&strip=all&ssl=1')">
+                                    </div>
+
+                                </div>
+
+                                <div class="product-description">
+
+                                    <!-- title -->
+                                    <h1 class="title">
+                                        Call of duty modern warfare II
+                                    </h1>
+
+                                    <!-- category and price -->
+                                    <div class="row category-price">
+
+                                        <div class="col-xs-12 col-sm-8 category">
+                                            <div class="categpries">Acción</div>
+                                        </div>
+
+                                        <!-- <div class="col-xs-12 col-sm-4 prices original">
+                                                    
+                                                                                    <span class="price">$ 3.200,0</span>
+                                                    
+                                                                                </div> -->
+
+                                        <!-- Precio con descuento -->
+                                        <div class="col-xs-12 col-sm-4 prices offer">
+
+                                            <span class="price">$ 3.200,0</span>
+                                            <span class="discounted">$ 3.000,0</span>
+
+                                        </div>
+
+                                    </div>
+
+                                    <hr />
+
+                                    <!-- descripcion -->
+                                    <div class="description">
+
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-shopping-cart-plus" width="44"
+                                            height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7"
+                                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <circle cx="6" cy="19" r="2" />
+                                            <circle cx="17" cy="19" r="2" />
+                                            <path d="M17 17h-11v-14h-2" />
+                                            <path d="M6 5l6.005 .429m7.138 6.573l-.143 .998h-13" />
+                                            <path d="M15 6h6m-3 -3v6" />
+                                        </svg>
+                                        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart-x"
+                                                                                    width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7"
+                                                                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                                                    <circle cx="6" cy="19" r="2" />
+                                                                                    <circle cx="17" cy="19" r="2" />
+                                                                                    <path d="M17 17h-11v-14h-2" />
+                                                                                    <path d="M6 5l7.999 .571m5.43 4.43l-.429 2.999h-13" />
+                                                                                    <path d="M17 3l4 4" />
+                                                                                    <path d="M21 3l-4 4" />
+                                                                                </svg> -->
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-heart" width="44" height="44"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#FE59D7" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <path
+                                                d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                                        </svg>
+
+                                    </div>
+
+                                </div>
+
+                            </article>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
         </section>
 
         <!-- F O O T E R -->
