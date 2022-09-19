@@ -1042,6 +1042,7 @@ li {
 .slider .slide img {
     height: auto;
     width: auto;
+    margin: 0 auto
 }
 
 
@@ -1916,6 +1917,7 @@ aside {
 }
 
 @media (max-width: 530px) {
+
     .carousel-item {
         height: 20rem;
     }
@@ -1966,6 +1968,10 @@ aside {
     .genero-fecha input[type=date] {
         width: 55%;
         margin: 0 0 0 1rem;
+    }
+
+    .user-dropdown {
+        top: -12px;
     }
 }
 
@@ -2571,4 +2577,76 @@ section,
     .section-search {
         @apply flex-col;
     }
+}
+
+.section-about .img {
+    background-image: url(../resources/images/background_aboutUs.png);
+    background-position: 20%;
+    background-size: cover;
+    width: 100%;
+    height: 20rem;
+    margin-bottom: 1rem;
+}
+
+.section-about {
+    width: 100%;
+}
+
+.text-about p {
+    width: 80%;
+    font-size: .9rem;
+    margin-bottom: 1rem;
+}
+
+.text-about {
+    margin-bottom: 4rem;
+}
+
+.slider2 .slide-track {
+    width: calc(200px * 18);
+}
+
+.slider2 .slide {
+    width: 100px;
+}
+
+.slider2 img {
+    margin: 0 3rem !important;
+}
+
+@media (max-width: 530px) {
+    .text-about p {
+        width: 100%;
+        font-size: .7rem;
+        margin-bottom: 1rem;
+        line-height: 14px;
+    }
+
+    .slider2 .slide {
+        width: 70px;
+    }
+
+    h3.colorado {
+        font-size: 2.1rem;
+    }
+
+    p.leading-relaxed {
+        font-size: .7rem;
+    }
+
+    h2.title-font {
+        font-size: 1.5rem;
+    }
+
+    .text-about {
+        margin-bottom: 1.5rem;
+    }
+}
+
+
+@media (max-width: 460px) {
+    .section-about .img {
+        height: 10rem;
+    }
+
 }
