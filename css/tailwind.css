@@ -4817,11 +4817,11 @@ section,
 }
 
 .slider2 .slide-track {
-  width: calc(200px * 18);
+  width: calc(150px * 14);
 }
 
 .slider2 .slide {
-  width: 100px;
+  width: 150px;
 }
 
 .slider2 img {
